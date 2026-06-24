@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+results/*raw*.csv
+results/focused_stock_flow_time.csv
+results/focused_stock_flow.csv
+results/focused_policy.csv
+results/focused_breadth_depth.csv
