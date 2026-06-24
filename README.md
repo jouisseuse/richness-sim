@@ -1,12 +1,10 @@
 # Ecological Opportunity and Experienced Richness
 
-This repository contains simple bandit simulations exploring when ecological richness becomes experienced richness.
+This repository contains a compact set of bandit simulations for studying when ecological opportunities become psychologically rich lived experiences.
 
-## Core Question
+## Core Idea
 
-Does having more possible experiences in an environment automatically produce a richer lived experience?
-
-The simulations suggest the answer is no. The useful framework is:
+More possible experiences do not automatically produce richer lived experience. The useful pathway is:
 
 ```text
 Ecological richness
@@ -15,33 +13,23 @@ Ecological richness
 -> Stock richness / Flow richness
 ```
 
-- **Ecological richness**: all possible opportunities in the environment.
+- **Ecological richness**: all possible opportunities in an environment.
 - **Feasible richness**: opportunities accessible under time and cost constraints.
 - **Experienced richness**: opportunities actually chosen by the agent.
-- **Stock richness**: accumulated diversity of experience.
+- **Stock richness**: accumulated diversity of experiences.
 - **Flow richness**: ongoing novelty over time.
 
-## Main Files
+## Repository Contents
 
-- `simulate_richness.py`: broader simulation suite, including ecological/feasible/experienced richness, temporal trajectories, algorithm checks, and sensitivity sweeps.
-- `focused_simulations.py`: concise three-part simulation suite used for the final story.
-- `results/final_report_english.md`: shareable English report.
-- `results/focused_report.md`: short focused report.
-- `results/report.md`: broader exploratory report.
+- `focused_simulations.py`: main script for the final three focused simulations.
+- `simulate_richness.py`: shared simulation utilities and broader exploratory model code.
+- `results/final_report_english.md`: concise English report.
+- `results/focused_simulations.png`: summary figure for the three final simulations.
+- `results/*_summary.csv`: summary tables for the final simulations.
 
-## Key Outputs
+Large raw simulation traces and intermediate exploratory reports are intentionally excluded.
 
-- `results/focused_simulations.png`: compact figure for the three focused simulations.
-- `results/richness_layers_thompson.png`: ecological, feasible, and experienced richness.
-- `results/figure1_cumulative_unique.png`: cumulative unique experiences over time.
-- `results/figure2_new_discoveries.png`: ongoing novelty rate over time.
-- `results/figure3_unique_share.png`: unique experiences divided by ecological K.
-- `results/figure4_algorithm_comparison.png`: exploration policy comparison.
-- `results/figure5_flowing_arms.png`: static versus flowing ecology.
-- `results/figure6_sensitivity_late_novelty.png`: sensitivity of late novelty.
-- `results/figure7_conversion_vs_late_novelty.png`: stock conversion versus flow novelty.
-
-## Reproducing Results
+## Reproduce
 
 Install dependencies:
 
@@ -49,16 +37,10 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run the focused simulations:
+Run the final focused simulations:
 
 ```bash
 python3 focused_simulations.py --outdir results --sims 300 --depth-sims 700
-```
-
-Run the broader exploratory simulations:
-
-```bash
-python3 simulate_richness.py --outdir results --sims 100 --sensitivity-sims 30
 ```
 
 ## Short Takeaway
