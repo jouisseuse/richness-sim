@@ -6,3 +6,5 @@ results/focused_stock_flow_time.csv
 results/focused_stock_flow.csv
 results/focused_policy.csv
 results/focused_breadth_depth.csv
+results/campus_l1_policy_fit.csv
+results/campus_l1_policy_mismatch.csv

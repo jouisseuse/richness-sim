@@ -24,8 +24,10 @@ Ecological richness
 - `focused_simulations.py`: main script for the final three focused simulations.
 - `simulate_richness.py`: shared simulation utilities and broader exploratory model code.
 - `l1_richness.py`: computational-level model that solves the optimal policy exactly and produces richness surfaces over structure and enrichment.
+- `campus_l1.py`: computational-level new-campus/new-city activity exploration model.
 - `results/final_report_english.md`: concise English report.
 - `results/l1_report.md`: L1 computational-level report.
+- `results/campus_l1_report.md`: campus/new-city L1 report.
 - `results/focused_simulations.png`: summary figure for the three final simulations.
 - `results/*_summary.csv`: summary tables for the final simulations.
 
@@ -49,6 +51,12 @@ Run the L1 computational-level surfaces:
 
 ```bash
 python3 l1_richness.py --outdir results --T 12 --rollouts 1500
+```
+
+Run the new-campus/new-city L1 simulation:
+
+```bash
+python3 campus_l1.py --outdir results --sims 500
 ```
 
 ## Short Takeaway
